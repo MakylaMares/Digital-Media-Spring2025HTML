@@ -1,25 +1,33 @@
-var life = 100; // This is my Life bar  (NUMBER)
+const name = 'Makyla';
 
-life = life - 10;
+function divider(p1, p2) {
+    console.log(p1 / p2);
+}
 
-//90
+divider(156,128);
 
-life = life / 10;
+function multiplier(x, y = 60) {
+    console.log(x +y);
+}
 
-var name = 'Dev Ed'; // This is the name display in the game  (STRING)
+multiplier(15)
 
-var checkout = false; // (BOOLEAN)
+function greet(name) {
+    console.log('Hello, ' + name + '!');
+}
 
-var box; // This is my box varible 
+greet(name)
 
-var global = 'Hello' // This is my global varible
+const person1 = {};
+person1['firstname'] = 'Mario';
+person1['lastname'] = 'Rossi';
 
-const myObject = {
-    property1: 'value1'  // This is my const Object
+console.log(person1.firstname);
+
+
+const person2 = {
+  firstname: 'John',
+  lastname: 'Doe',
 };
 
-//OBJECT SYNBOL
-
-console.log('Hey Dev Ed!');
-
-console.log(life);
+console.log(person2['lastname']);
