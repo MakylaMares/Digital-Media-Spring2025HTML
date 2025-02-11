@@ -1,33 +1,45 @@
 const name = 'Makyla';
+const number = 22;
 
-function divider(p1, p2) {
-    console.log(p1 / p2);
+console.log(
+   ' Hello I am ' + name + ' and I am ' + number + ' years old '
+);
+
+const age = 16;
+
+if(age > 18) {
+    console.log('you are good to go');
+} else if(age < 15){
+    console.log('wow you are really young')
 }
-
-divider(156,128);
-
-function multiplier(x, y = 60) {
-    console.log(x +y);
+else {
+    console.log('you are not old enough');
 }
+/// String Method 
 
-multiplier(15)
+switch (undefined) {
+    case console.log(1):
+    case console.log(2):
+  }
+/// Switch Statement
 
-function greet(name) {
-    console.log('Hello, ' + name + '!');
-}
+const result = Math.abs(0.3 - 0.5 + 0.9);
 
-greet(name)
+console.log(result);
 
-const person1 = {};
-person1['firstname'] = 'Mario';
-person1['lastname'] = 'Rossi';
+console.log(result < Number.EPSILON);
+/// Is the equation True or False
 
-console.log(person1.firstname);
+const equation = (x = 0.2 + 0.1);
+
+console.log(equation)
+/// The results to equation x = 0.2 + 0.1
+
+const numbers = (x = 452.23);
+
+console.log(numbers)
+/// Numbers with decimals
 
 
-const person2 = {
-  firstname: 'John',
-  lastname: 'Doe',
-};
 
-console.log(person2['lastname']);
+
