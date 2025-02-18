@@ -1,44 +1,63 @@
-const name = 'Makyla';
-const number = 22;
+const user = {
+    name: 'Makyla',
+    age: 22,
+    married: false,
+    purchases: ["phone", "laptop", "car"],
 
-console.log(
-   ' Hello I am ' + name + ' and I am ' + number + ' years old '
-);
 
-const age = 16;
+    sayName: function() {
+        console.log(this);
+    }
+};
 
-if(age > 18) {
-    console.log('you are good to go');
-} else if(age < 15){
-    console.log('wow you are really young')
-}
-else {
-    console.log('you are not old enough');
-}
-/// String Method 
+user.sayName();
+///Object
 
-switch (undefined) {
-    case console.log(1):
-    case console.log(2):
-  }
-/// Switch Statement
+const car = {
+    type: 'Nissian',
+    year: 2013,
 
-const result = Math.abs(0.3 - 0.5 + 0.9);
+    vehicle: function() {
+        console.log(this);
+    }
 
-console.log(result);
+};
 
-console.log(result < Number.EPSILON);
-/// Is the equation True or False
+car.vehicle();
+///Object
 
-const equation = (x = 0.2 + 0.1);
 
-console.log(equation)
-/// The results to equation x = 0.2 + 0.1
+const person = {
+    firstName: 'Matthew',
+    grade: 8,
+};
 
-const numbers = (x = 452.23);
+console.log(person);
+///Object Method
 
-console.log(numbers)
-/// Numbers with decimals
+
+const cat = {
+    name: 'Daisy',
+
+    meow: function (){
+        console.log("Meow!");
+    }
+};
+
+cat.meow();
+///Object Method
+
+
+const fruits = [];
+
+fruits.length = 10;
+console.log(fruits); 
+console.log(Object.keys(fruits)); 
+console.log(fruits.length); 
+console.log(fruits[8]); 
+///Array Method
+
+
 
 
 
