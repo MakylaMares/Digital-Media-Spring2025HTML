@@ -1,15 +1,8 @@
-const names = ["Makyla", "Jacky", "Xavier", "Matt", "Christian"];
+const names = ["Kayla", "Juan", "Josh", "Jess", "Fred", "lucky"];
 
-
-for(name of names ){
-    console.log('Hello there ${name}');
+for(name of names){
+    console.log(name);
 }
-///Loop For
-
-for (let i = 0; i < 5; i++) {
-    console.log(i);
-  }
-///Loop For
 
 let n = 0;
 
@@ -18,112 +11,36 @@ while (n < 3) {
 }
 
 console.log(n);
-///Loop While
 
-const userlist = document.querySelectorAll(".name-list li");
-const listInput = document.querySelector(".list-input");
-const addListBtn = document.querySelector(".addListBtn");
+const newH1 = document.createElement("h1");
+newH1.id = "myH1";
+newH1.style.color = "tomato";
+newH1.style.textAlign = "center";
 
-addListBtn.addEventListener('click', function(){
-    const newLi = document.createElement('LI');
-    const liContent = document.createTextNode(listInput.value);
-    newLi.appendChild(liContent);
-    userlist,appendChild(newLi);
-});
+newH1.textContent = "I like Pizza!";
+
+const box2 = document.getElementById("box2");
+document.body.insertBefore(newH1, box2);
 
 
+let fruits = ["apple", "orange", "banana"];
 
+fruits.unshift("mango");
 
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);
+console.log(fruits[3]);
 
+const person1 = {
+    firstName: "Makyla",
+    lastName: "Mares",
+    age: 30,
+    isEmployed: true,
+    sayHello: function(){console.log("Hi! I am Makyla!")},
+    eat: function(){console.log("I am eating a Mango")},
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const user = {
-    name: 'Makyla',
-    age: 22,
-    married: false,
-    purchases: ["phone", "laptop", "car"],
-
-
-    sayName: function() {
-        console.log(this);
-    }
-};
-
-user.sayName();
-///Object
-
-const car = {
-    type: 'Nissian',
-    year: 2013,
-
-    vehicle: function() {
-        console.log(this);
-    }
-
-};
-
-car.vehicle();
-///Object
-
-
-const person = {
-    firstName: 'Matthew',
-    grade: 8,
-};
-
-console.log(person);
-///Object Method
-
-
-const cat = {
-    name: 'Daisy',
-
-    meow: function (){
-        console.log("Meow!");
-    }
-};
-
-cat.meow();
-///Object Method
-
-
-const fruits = [];
-
-fruits.length = 10;
-console.log(fruits); 
-console.log(Object.keys(fruits)); 
-console.log(fruits.length); 
-console.log(fruits[8]); 
-///Array Method
-
-
-
-
-
-
+console.log(person1.firstName);
+person1.sayHello();
+person1.eat();
