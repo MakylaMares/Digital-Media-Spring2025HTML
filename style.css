@@ -1,32 +1,83 @@
-* { 
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
+
+*{
+padding: 0;
+margin: 0;
+font-family: 'Open Sans', sans-serif;
+box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+body{
+  line-height: 1.5;
   height: 100vh;
-  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.emoji {
-  font-size: 10rem;
+.wrapper{
+  border-radius: 0.6rem;
+  padding: 1.6rem;
+  text-align: center;
+}
+
+.wrapper h2{
+  font-size: 2rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.wrapper textarea{
+  border: 4px solid #ef233c;
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+  width: 100%;
+  font-size: 1rem;
+  margin: 1rem 0 0 0;
+  resize: none;
+  caret-color: #ef233c;
+}
+
+.wrapper textarea::placeholder{
+  color: #ef233c
+}
+
+.wrapper div{
+  padding: 1rem 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+#vowel-count{
+  margin-left: 0.6rem;
+  display: inline-block;
+  background: #ef233c;
+  color: #fff;
+  border-radius: 5px;
+  width: 60px;
+}
+
+#check-btn{
+  background-color: #ef233c;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
+  font-size: 1.05rem;
+  padding: 0.7rem 2rem;
+  border-radius: 1.5rem;
   cursor: pointer;
-  user-select: none;
+  outline: 0;
+  letter-spacing: 0.5px;
+  transition: opacity 0.5s ease;
 }
 
-.closed {
-  display: none;
+#check-btn:hover{
+  opacity: 0.9;
 }
 
-.open {
-  display: none;
-}
-
-.active {
-  display: block;
+@media screen and (min-width: 480px){
+  .wrapper{
+    width: 400px;
+  }
 }
